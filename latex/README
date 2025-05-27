@@ -10,6 +10,14 @@ by the leading TeX developer STM Document Engineering Pvt Ltd.
 elsarticle.cls is based upon the standard LaTeX document class
 article.cls. It uses natbib.sty for bibliographical references.
 
+CITATION STYLE USED IN THIS DOCUMENT:
+=====================================
+This document uses NUMERICAL CITATIONS with the following setup:
+- Bibliography style: elsarticle-num.bst
+- Citation commands: \citep{key} produces [1], \citet{key} produces Author [1]
+- Multiple citations: \citep{key1,key2} produces [1,2]
+- Bibliography entries are numbered [1], [2], [3], etc.
+
 Bugs and problems with elsarticle.cls may be reported to the
 developers of the class via elsarticle@stmdocs.in.
 
