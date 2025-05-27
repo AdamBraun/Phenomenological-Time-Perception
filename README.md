@@ -1,6 +1,10 @@
-# Phenomenological-Time-Perception
+# Phenomenological Time Perception
 
-[![DOI](https://zenodo.org/badge/991246190.svg)](https://doi.org/10.5281/zenodo.15526467)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15526993.svg)](https://doi.org/10.5281/zenodo.15526993)
+[![OSF](https://img.shields.io/badge/OSF-Preregistration-blue)](https://osf.io/8n7zg)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 ## Overview
 
@@ -141,15 +145,40 @@ The study is preregistered on OSF at https://osf.io/8n7zg. The preregistration f
 - H3: Psychometric curves scale logarithmically with duration and inversely with displacement.
 - H4 (Exploratory): Recursive algorithm predicts discrimination thresholds (r > 0.6).
 
-## License
-
-This repository is licensed under the [CC-BY 4.0 License](LICENSE). You are free to share and adapt the material, provided attribution is given to Adam Braun.
-
 ## Contact
 
-For questions, contact Adam Braun. Issues can be reported via GitHub Issues.
+For questions, contact Adam Braun at mail.adam.braun@gmail.com. Issues can be reported via [GitHub Issues](https://github.com/AdamBraun/Phenomenological-Time-Perception/issues).
 
 ## Citation
 
-If using this repository, please cite:
+If you use this work, please cite:
+
+```bibtex
+@misc{braun2025multiscale,
+  author = {Braun, Adam},
+  title = {A Multiscale ε–δ Metric Framework for Phenomenological Time Perception},
+  year = {2025},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.15526993},
+  url = {https://doi.org/10.5281/zenodo.15526993}
+}
+```
+
+**APA Style:**
+Braun, A. (2025). _A Multiscale ε–δ Metric Framework for Phenomenological Time Perception_ [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.15526993
+
+**OSF Preregistration:**
 Braun, A. (2025). A Multiscale ε–δ Metric Framework for Phenomenological Time Perception. OSF Preregistration. https://osf.io/8n7zg
+
+## License
+
+This work is licensed under the [Creative Commons Attribution 4.0 International License (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made
+
+See the [LICENSE](LICENSE) file for the full license text.
