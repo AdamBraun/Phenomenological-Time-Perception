@@ -1,1 +1,63 @@
+# LaTeX Build Artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.spl
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.glsdefs
+*.ist
+*.xdy
+*.figlist
+*.makefile
+*.fls_latexmk
+
+# Bibliography files (generated)
+*.run.xml
+*.bcf
+
+# PDF outputs (optional - you may want to track some PDFs)
+*.pdf
+
+# Temporary files
+*~
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# System files
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# LaTeX package documentation (if generated)
+doc/
+
+# Compilation logs from elsarticle
+elsarticle.log
