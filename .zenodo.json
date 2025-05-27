@@ -1,0 +1,30 @@
+{
+  "title": "Source Files for A Multiscale ε–δ Metric Framework for Phenomenological Time Perception",
+  "description": "LaTeX source, figures, and Python notebooks for a theoretical model of time perception, as described in Braun (2025).",
+  "creators": [
+    {
+      "name": "Braun, Adam",
+      "orcid": "0009-0000-9633-5574"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "time perception",
+    "metric-threshold",
+    "multiscale",
+    "psychophysics",
+    "robotics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AdamBraun/Phenomenological-Time-Perception",
+      "relation": "isSupplementedBy"
+    },
+    {
+      "identifier": "https://osf.io/8n7zg",
+      "relation": "isPartOf"
+    }
+  ],
+  "upload_type": "dataset"
+}
