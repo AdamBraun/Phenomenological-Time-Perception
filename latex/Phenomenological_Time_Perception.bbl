@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{gibbonscalar}
+J.~Gibbon, Scalar expectancy theory and weber's law in animal timing,
+  Psychological Review 84~(3) (1977) 279--325.
+\newblock \href {https://doi.org/10.1037/0033-295X.84.3.279}
+  {\path{doi:10.1037/0033-295X.84.3.279}}.
+
+\bibitem{miallbeat}
+M.~S. Matell, W.~H. Meck, Cortico-striatal circuits and interval timing:
+  Coincidence detection of oscillatory processes, Cognitive Brain Research
+  21~(2) (2004) 139--170.
+\newblock \href {https://doi.org/10.1016/j.cogbrainres.2004.06.012}
+  {\path{doi:10.1016/j.cogbrainres.2004.06.012}}.
+
+\bibitem{buonomano2009}
+D.~V. Buonomano, R.~B. Maass, State-dependent computations: Spatiotemporal
+  processing in cortical networks, Nature Reviews Neuroscience 10~(2) (2009)
+  113--125.
+\newblock \href {https://doi.org/10.1038/nrn2558} {\path{doi:10.1038/nrn2558}}.
+
+\bibitem{block1990distinguishing}
+R.~A. Block, D.~Zakay, Distinguishing between prospective and retrospective
+  timing, Memory \& Cognition 18~(1) (1990) 97--105.
+\newblock \href {https://doi.org/10.3758/BF03202649}
+  {\path{doi:10.3758/BF03202649}}.
+
+\bibitem{church1984human}
+R.~M. Church, Properties of the internal clock, Annals of the New York Academy
+  of Sciences 423 (1984) 566--582.
+\newblock \href {https://doi.org/10.1111/j.1749-6632.1984.tb23459.x}
+  {\path{doi:10.1111/j.1749-6632.1984.tb23459.x}}.
+
+\bibitem{fechner1860}
+G.~T. Fechner, Elemente der Psychophysik, Breitkopf \& Härtel, 1860.
+
+\bibitem{watanabe85perceptual}
+H.~Watanabe, S.~Nishida, Slow visual motion expands subjective duration, Vision
+  Research 109 (2015) 76--83.
+\newblock \href {https://doi.org/10.1016/j.visres.2015.01.007}
+  {\path{doi:10.1016/j.visres.2015.01.007}}.
+
+\bibitem{Roseboom2019}
+W.~Roseboom, N.~J. Evans, A.~K. Seth, Activity in perceptual classification
+  networks as a basis for human subjective time perception, Nature
+  Communications 10 (2019) 2944.
+\newblock \href {https://doi.org/10.1038/s41467-018-08194-7}
+  {\path{doi:10.1038/s41467-018-08194-7}}.
+
+\bibitem{Sherman2022}
+M.~T. Sherman, Z.~Fountas, A.~K. Seth, W.~Roseboom, Trial-by-trial predictions
+  of subjective time from human brain activity, PLOS Computational Biology
+  18~(7) (2022) e1010223.
+\newblock \href {https://doi.org/10.1371/journal.pcbi.1010223}
+  {\path{doi:10.1371/journal.pcbi.1010223}}.
+
+\bibitem{Singhal2021}
+I.~Singhal, N.~Srinivasan, Time and time again: A multi-scale hierarchical
+  framework for time-consciousness and timing of cognition, Neuroscience of
+  Consciousness 7~(2) (2021) niab020.
+\newblock \href {https://doi.org/10.1093/nc/niab020}
+  {\path{doi:10.1093/nc/niab020}}.
+
+\bibitem{friston2010free}
+K.~J. Friston, The free-energy principle: A unified brain theory?, Nature
+  Reviews Neuroscience 11~(2) (2010) 127--138.
+\newblock \href {https://doi.org/10.1038/nrn2787} {\path{doi:10.1038/nrn2787}}.
+
+\bibitem{zacks2007event}
+J.~M. Zacks, K.~M. Swallow, Event segmentation, Current Directions in
+  Psychological Science 16~(2) (2007) 80--84.
+\newblock \href {https://doi.org/10.1111/j.1467-8721.2007.00480.x}
+  {\path{doi:10.1111/j.1467-8721.2007.00480.x}}.
+
+\bibitem{merchant2013neurophysiology}
+H.~Merchant, J.~L. Hernández-Pérez, M.~G. Pérez, Neurophysiology of interval
+  timing in the primate: A historical perspective, Journal of Neurophysiology
+  110~(9) (2013) 2089--2100.
+\newblock \href {https://doi.org/10.1152/jn.00335.2013}
+  {\path{doi:10.1152/jn.00335.2013}}.
+
+\bibitem{Liang2023}
+W.~Liang, W.~Xu, X.~Zhou, et~al., Learning subjective time-series data via
+  utopia label distribution approximation, arXiv preprint arXiv:2307.07682
+  (2023).
+\newblock \href {https://doi.org/10.48550/arXiv.2307.07682}
+  {\path{doi:10.48550/arXiv.2307.07682}}.
+
+\bibitem{hasson2008hierarchical}
+U.~Hasson, E.~Yang, I.~Vallines, D.~J. Heeger, N.~Rubin, A hierarchy of
+  temporal receptive windows in human cortex, Journal of Neuroscience 28~(10)
+  (2008) 2539--2550.
+\newblock \href {https://doi.org/10.1523/JNEUROSCI.5487-07.2008}
+  {\path{doi:10.1523/JNEUROSCI.5487-07.2008}}.
+
+\bibitem{jazayeri2015}
+M.~Jazayeri, M.~N. Shadlen, A neural mechanism for sensing and reproducing a
+  time interval, Current Biology 25~(20) (2015) 2599--2609.
+\newblock \href {https://doi.org/10.1016/j.cub.2015.08.038}
+  {\path{doi:10.1016/j.cub.2015.08.038}}.
+
+\bibitem{Arslanova2023}
+I.~Arslanova, V.~Kotsaris, M.~Tsakiris, Perceived time expands and contracts
+  within each heartbeat, Current Biology 33~(7) (2023) 1389--1395.
+\newblock \href {https://doi.org/10.1016/j.cub.2023.02.034}
+  {\path{doi:10.1016/j.cub.2023.02.034}}.
+
+\end{thebibliography}
