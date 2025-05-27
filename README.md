@@ -1,5 +1,7 @@
 # Phenomenological-Time-Perception
 
+[![DOI](https://zenodo.org/badge/991246190.svg)](https://doi.org/10.5281/zenodo.15526467)
+
 ## Overview
 
 This repository contains the LaTeX sources, figures, and Python scripts for the study "A Multiscale ε–δ Metric Framework for Phenomenological Time Perception," preregistered on the Open Science Framework (OSF). The study validates a novel multiscale perceptual tick model that quantizes sensory inputs into discrete perceptual units (ticks) based on metric distances and temporal durations, using a simulation-based approach. The model is parameterized by ε (imperceptibility threshold) and δ (single-tick range), inspired by Cantor-like partitions and recursive algorithms. The repository includes scripts to generate theoretical figures and synthetic datasets, as well as LaTeX sources for the manuscript describing the model and simulation results. An appendix in the preregistration outlines a potential empirical protocol if funding is secured.
