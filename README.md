@@ -1,6 +1,6 @@
 # Phenomenological Time Perception
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15529521.svg)](https://doi.org/10.5281/zenodo.15529521)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15533918.svg)](https://doi.org/10.5281/zenodo.15533918)
 [![OSF](https://img.shields.io/badge/OSF-Preregistration-blue)](https://osf.io/8n7zg)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
@@ -159,13 +159,13 @@ If you use this work, please cite:
   title = {A Multiscale ε–δ Metric Framework for Phenomenological Time Perception},
   year = {2025},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.15529521},
-  url = {https://doi.org/10.5281/zenodo.15529521}
+  doi = {10.5281/zenodo.15533918},
+  url = {https://doi.org/10.5281/zenodo.15533918}
 }
 ```
 
 **APA Style:**
-Braun, A. (2025). _A Multiscale ε–δ Metric Framework for Phenomenological Time Perception_ [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.15529521
+Braun, A. (2025). _A Multiscale ε–δ Metric Framework for Phenomenological Time Perception_ [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.15533918
 
 **OSF Preregistration:**
 Braun, A. (2025). A Multiscale ε–δ Metric Framework for Phenomenological Time Perception. OSF Preregistration. https://osf.io/8n7zg
