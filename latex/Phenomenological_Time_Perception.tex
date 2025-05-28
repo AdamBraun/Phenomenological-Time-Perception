@@ -396,24 +396,12 @@ corrected-to-normal vision.  Sample size determined by power analysis.
 
 \paragraph{Apparatus.}
 \begin{figure}[ht]
-\centering
-\begin{tikzpicture}[scale=0.9, every node/.style={font=\small}]
-% Monitor
-\draw[thick] (-3,0) rectangle (3,2);
-\node at (0,1) {OLED 144\,Hz, 24''};
-% Chin-rest
-\draw[thick] (-0.8,-0.3) -- (-0.8,-1.3) -- (0.8,-1.3) -- (0.8,-0.3);
-\node at (0,-0.8) {Chin-rest};
-% Eye-line
-\draw[dashed] (-3,1.5) -- (-4,1.5);
-\draw[dashed] (3,1.5) -- (4,1.5);
-\node[rotate=90] at (-4.3,1.5) {57\,cm};
-% Stimulus window
-\draw[thick, fill=black] (-1.5,0.25) rectangle (1.5,1.75);
-\node[text=white] at (0,1) {Random-dot field};
-\end{tikzpicture}
-\caption{Apparatus for psychophysical experiment, showing a 24-inch OLED monitor (144 Hz) and chin-rest at 57 cm viewing distance, with a 10°x10° random-dot stimulus field.}
-\label{fig:apparatus}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/apparatus_diagram.png}
+  \caption{Stimulus presentation geometry. The random-dot field
+           (\(10^\circ \times 10^\circ\)) is displayed on a 24″ OLED monitor.
+           Participants rest their chin 57 cm from the screen.}
+  \label{fig:apparatus}
 \end{figure}
 
 \paragraph{Stimuli.}
@@ -495,11 +483,6 @@ MetricChrono attains prediction~\ref{pred:agent}.
 \paragraph{Statistical Plan.}
 One-way ANOVA on log-episodes; Tukey-HSD post-hoc.  Confirmatory
 Bayes-factor $B_{10}$ for superiority of MetricChrono.
-
-\subsection{Apparatus Diagrams: Code Availability}
-The command \texttt{\string\usetikzlibrary} with libraries \( \{\text{calc}, \text{arrows.meta}, \text{positioning}\} \) is placed in the preamble.  Full \texttt{TikZ} source for both
-Fig.~\ref{fig:apparatus} and the grid-world is in
-\texttt{supplement/figures.tex}. All \LaTeX{} sources, figures, and Python notebooks are available at \url{https://github.com/AdamBraun/Phenomenological-Time-Perception}; archived at Zenodo DOI \href{https://doi.org/10.5281/zenodo.15529521}{10.5281/zenodo.15529521}. See Supplementary Materials for full TikZ source.
 
 % ---------------------------------------------------------------------------
 \section{Discussion}

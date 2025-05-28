@@ -17,6 +17,12 @@ All files are written to the current working directory.
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, FancyArrowPatch, FancyBboxPatch
+from scipy.special import expit  # logistic sigmoid
+from scipy.interpolate import UnivariateSpline
+
+# Model parameters
+epsilon = 0.1  # s
+delta = 0.3    # s
 
 # ----------------------------------------------------------------------
 # Section 1 – ε–δ ladder (single tier)
@@ -216,6 +222,100 @@ def simulate_behaviour(eps=0.1, delta=0.3,
     plt.savefig(out_prefix + "weber_variance.png", dpi=300)
     plt.close()
 
+def T_eps_delta(d, eps=epsilon, delt=delta):
+    """Single-tier ε–δ mapping for scalar physical duration d (seconds)."""
+    d = np.asarray(d)
+    return np.where(d < eps, 0,
+                   np.where(d <= delt, 1, d / delt))  # Continuous for d > δ
+
+# Figure 5 — Temporal Bisection Psychometric (synthetic predictions, smoothed)
+def fig_temporal_bisection(short_ref=0.4, long_ref=1.6, n_probe=200, sigma=0.3, filename="temporal_bisection.png"):
+    probes = np.linspace(short_ref, long_ref, n_probe)
+
+    # Perceived ticks
+    T_short = T_eps_delta(short_ref)
+    T_long = T_eps_delta(long_ref)
+    T_mid = 0.5 * (T_short + T_long)
+
+    T_probe = T_eps_delta(probes)
+
+    # Psychometric function: P("long") with wider logistic
+    p_long = expit((T_probe - T_mid) / sigma)
+
+    plt.figure(figsize=(6, 4))
+    plt.plot(probes, p_long, 'b-', label="P(long)")  # Smooth line
+    plt.axvline(short_ref, ls='--', lw=0.8, color='black', label='short ref')
+    plt.axvline(long_ref, ls='--', lw=0.8, color='black', label='long ref')
+    plt.axhline(0.5, ls=':', lw=0.8, color='gray', label='P = 0.5')
+    plt.xlabel("Probe duration (s)")
+    plt.ylabel('P("long" response)')
+    plt.title("Synthetic Temporal Bisection\nModel midpoint at P=0.5")
+    plt.legend(frameon=False, fontsize='small')
+    plt.tight_layout()
+    plt.savefig(filename, dpi=300)
+    plt.close()
+
+# Figure 6 — Vierordt Bias Curve (synthetic predictions, smoothed)
+def fig_vierordt_bias(phys=np.linspace(0.2, 2.0, 300), k_central=0.4, filename="vierordt_bias.png"):
+    # True perceived ticks
+    T_true = T_eps_delta(phys)
+    mean_T = T_true.mean()
+    T_reprod = T_true + k_central * (mean_T - T_true)
+
+    # Convert reproduced ticks back to seconds
+    d_reprod = np.where(T_reprod < 0.5, 0, T_reprod * delta)
+
+    # Spline smoothing to preserve bow shape
+    spl = UnivariateSpline(phys, d_reprod, s=0.05)  # Small s for minimal distortion
+    d_reprod_smooth = spl(phys)
+
+    plt.figure(figsize=(6, 4))
+    plt.plot(phys, d_reprod_smooth, 'b-', lw=2, label="reproduced")  # Smooth line
+    plt.plot(phys, phys, ls='--', color='gray', label="veridical")
+    plt.xlabel("Physical duration (s)")
+    plt.ylabel("Reproduced duration (s)")
+    plt.title("Synthetic Vierordt Curve\n(central-tendency bias k=0.4)")
+    plt.legend(frameon=False, fontsize='small')
+    plt.tight_layout()
+    plt.savefig(filename, dpi=300)
+    plt.close()
+
+# Figure 7 — Apparatus Diagram
+def fig_apparatus_diagram(filename="apparatus_diagram.png"):
+    fig, ax = plt.subplots(figsize=(6, 4))
+    ax.axis('off')
+
+    # monitor frame
+    ax.add_patch(Rectangle((-3, 0), 6, 2, fill=False, linewidth=2))
+    ax.text(0, 1, "OLED 144 Hz 24″", ha='center', va='center', fontsize=8)
+
+    # stimulus window
+    ax.add_patch(Rectangle((-1.5, 0.25), 3, 1.5, color='black'))
+    ax.text(0, 1, "Random-dot\nfield", color='white',
+            ha='center', va='center', fontsize=8)
+
+    # chin-rest
+    ax.add_patch(Rectangle((-0.8, -0.4), 1.6, 0.6, fill=False, linewidth=1.5))
+    ax.text(0, -0.1, "Chin-rest", ha='center', va='top', fontsize=8)
+
+    # dashed distance markers
+    ax.plot([-3, -4.2], [1.5, 1.5], ls='--', lw=1, color='gray')
+    ax.plot([ 3,  4.2], [1.5, 1.5], ls='--', lw=1, color='gray')
+    ax.text(-4.3, 1.5, "57 cm", rotation=90, va='center',
+            ha='right', fontsize=8)
+
+    # horizontal brace (optional)
+    arrow = FancyArrowPatch((3, 2.15), (-3, 2.15),
+                            arrowstyle='<->', mutation_scale=10, lw=1)
+    ax.add_patch(arrow)
+    ax.text(0, 2.25, "≈ 53 cm", ha='center', va='bottom', fontsize=7)
+
+    ax.set_xlim(-5, 5)
+    ax.set_ylim(-1, 3)
+    fig.tight_layout()
+    fig.savefig(filename, dpi=300)
+    plt.close()
+
 # ----------------------------------------------------------------------
 # Master execution
 # ----------------------------------------------------------------------
@@ -225,3 +325,6 @@ if __name__ == "__main__":
     plot_psychometric()
     plot_algorithm_schematic()
     simulate_behaviour()
+    fig_temporal_bisection()
+    fig_vierordt_bias()
+    fig_apparatus_diagram()
